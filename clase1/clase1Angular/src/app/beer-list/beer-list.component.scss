@@ -1,0 +1,50 @@
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.botones .menos{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 3px;
+}
+
+.botones{
+	width: 100px;
+}
+
+.inputCompra{
+		width: 30px;
+}
+
+
+.botones .mas{
+	float: right;
+	width: 30px;
+	height: 30px;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color:  #000;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+.imgCerv{
+	width: 100px;
+	height: 100px;
+}
+.oferta{
+  background-color:rgba(27, 215, 24, 180);
+}

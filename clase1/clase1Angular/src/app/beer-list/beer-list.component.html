@@ -1,0 +1,33 @@
+<table>
+  <thead>
+    <tr>
+      <td> </td>
+      <td>{{titulos.name}}</td>
+      <td>{{titulos.descripcion}}</td>
+      <td>{{titulos.precio}}</td>
+      <td>{{titulos.stock}}</td>
+      <td>Comprar</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor= "let cerveza of cervezas" [class.oferta]="cerveza.oferta">
+      <td><img [src]="'/assets/img/' + cerveza.img" [alt]="cerveza.name"class="imgCerv"/></td>
+      <td>{{cerveza.name}}</td>
+      <td>{{cerveza.descripcion}}</td>
+      <td>{{cerveza.precio}}</td>
+      <!-- <td *ngIf = "cerveza.stock > 0" > <button type="button" name="button" (click)="downQuantity(cerveza)">-</button>  <button type="button" name="button" (click)="upQuantity(cerveza)">+</button></td>
+      <td *ngIf = "cerveza.stock == 0" >X</td> -->
+      <td *ngIf="cerveza.stock>0">V</td>
+    <td *ngIf="cerveza.stock<=0">X</td>
+    <td *ngIf="cerveza.stock>0">
+      <div class="botones">
+        <button type="button" name="button" class ="menos" (click)="downQuantity(cerveza)">-</button>
+        <input class= "inputCompra" [(ngModel)]="cerveza.quantity" />
+         <button type="button" name="button" class ="mas" (click)="upQuantity(cerveza)">+</button>
+         <button type="button" class="btn btn-default btn-xs" [disabled]="cerveza.quantity == 0" (click)="addCart(cerveza)">Comprar</button>
+      </div>
+    </td>
+
+    </tr>
+  </tbody>
+</table>

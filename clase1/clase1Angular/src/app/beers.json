@@ -1,0 +1,31 @@
+{
+  "Beer" : {
+    "-KbNnvjgxldxzB4lqHPP" : {
+      "name" : "Lager",
+      "descripcion" : "Rubia y ligera, es la cerveza por excelencia, la más extendida.",
+      "precio" : 90,
+      "stock" : 300,
+      "img": "lager.gif",
+      "oferta": true,
+      "quantity":0
+    },
+    "-KbNnyG2JWf9RcCWvIFe" : {
+      "name" : "Blanca",
+      "descripcion" : "Esta cerveza se hace exclusivamente con trigo.",
+      "precio" : 120,
+      "stock" : 100,
+      "img": "blanca.jpg",
+      "oferta": false,
+      "quantity":0
+    },
+    "-KbNoToPmUUs3Xt-cnXR" : {
+      "name" : "Gris",
+      "descripcion" : "Es gris.",
+      "precio" : 320,
+      "stock" : 1,
+      "img": "gris.webp",
+      "oferta": true,
+      "quantity":0
+    }
+  }
+}

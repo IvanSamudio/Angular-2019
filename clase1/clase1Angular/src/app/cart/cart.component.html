@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th>Cerveza</th>
+      <th>Cantidad</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let beer of beers" >
+          <td>{{beer.name}}</td>
+          <td >{{beer.quantity}}</td>
+          <td>{{totalPrice(beer)| currency:'USD':true:'1.2-2'}}</td>
+    </tr>
+  </tbody>
+</table>
+ <h2 class="text-right">Total: {{total()| currency:'USD':true:'1.2-2'}}</h2>
